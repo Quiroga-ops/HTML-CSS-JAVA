@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <style type="text/css">
+        body {
+            background-color:#373a40;
+            font-size: 20px;
+            color: #eeeeee;
+        }
+        .volver {
+            color: #eeeeee;
+            text-decoration: none;
+            padding: 20px;
+            background-color: #555555;
+            
+        }
+        .volver:hover {
+            background-color: #eeeeee;
+            color: #373a40;
+        }
+        
+        .boton {
+        background-color: #555555;
+        color: #eeeeee;
+        text-decoration: none;
+        padding: 20px;
+        border-radius: 10px;
+        font-size: 20px;
+        margin-right: 15px;
+        text-align: center;
+    }
+    .boton:hover {
+        background-color: #eeeeee;
+        color: #373a40;
+    }
+    </style>
+    <a class="volver" href="../actividad 10/actividades 10.html">VOLVER</a>
+<head>
+<meta charset="UTF-8">
+<title>Adding HTML5 Video</title>
+</head>
+
+<body>
+    <br>
+    <br>
+    <br>
+    
+<video src="..//deo/puppy.mp4/"
+poster="../images/puppy.jpg"
+width="400" height="300"
+preload
+controls
+loop>
+</video>
+
+<p>Un video de un cachorro jugando en la nieve</p>
+<p>En HTML5 no es necesario proporcionar valores para todos los atributos, como los controles, reproducción automatica y atributos de bucle utilizados con el elemento &lt;video&gt;. Estos atributos son como interruptores de encendido/apagado. Si el atributo está presente, activa esta opción. Si se omite el atributo, la opción está desactivada. Si el navegador no admite el elemento &lt;video&gt; o el formato de vídeo utilizado, se mostrará lo que esté entre la &lt;video&gt; de apertura y las etiquetas de &lt;&#47;video&gt; de cierre.</p>
+
+<p><b>preload:</b> este atributo le indica al navegador qué hacer cuando se carga la página. Puede tener uno de tres valores: <br>
+<i>none:</i> El navegador no debe cargar el video hasta que el usuario presiona play. <br>
+<i>auto:</i> El navegador debe descargar el video cuando se carga la página. <br>
+<i>metadata:</i> El navegador debe simplemente recopilar información como el tamaño, el primer fotograma, la lista de pistas y la duración.<br></p>
+</body>
+</html>

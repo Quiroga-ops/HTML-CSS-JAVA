@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Ejemplo 032</title>
+        <script lang="java" type="text/javascript">
+        var DESC_G=0.15; DESC_G.toFixed(2);
+        var DESC_A=0.2; DESC_A.toFixed(2);
+        var REC_G=0.1; REC_G.toFixed(2);
+        var REC_A=0.05; REC_G.toFixed(2);
+        var mc,m=0,tp=0;
+        mc=prompt("Ingrese el monto de compra: ");
+        mc=parseFloat(mc);
+        m=parseFloat(m);
+        tp=parseFloat(m);
+        var tc,fp,r;
+        tc=prompt("Tipo de cliente G general o A afiliado: ");
+        fp=prompt("Forma de pago C credito E efectivo ");
+        if(tc=='G'||tc=='g'){
+            if(fp=='C'||fp=='c'){
+                m=mc
+            }
+        }
+        </script>
+    </head>
+</html>

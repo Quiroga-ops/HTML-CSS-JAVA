@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Adding HTML5 Video</title>
+</head>
+
+<body>
+<video src="../video/puppy.mp4/"
+poster="../images/puppy.jpg"
+width="400" height="300"
+preload
+controls
+loop>
+</video>
+
+<p>Un video de un cachorro jugando en la nieve</p>
+<p>En HTML5 no es necesario proporcionar valores para todos los atributos, como los controles, reproducción automatica y atributos de bucle utilizados con el elemento &lt;video&gt;. Estos atributos son como interruptores de encendido/apagado. Si el atributo está presente, activa esta opción. Si se omite el atributo, la opción está desactivada. Si el navegador no admite el elemento &lt;video&gt; o el formato de vídeo utilizado, se mostrará lo que esté entre la &lt;video&gt; de apertura y las etiquetas de &lt;&#47;video&gt; de cierre.</p>
+
+<p><b>preload:</b> este atributo le indica al navegador qué hacer cuando se carga la página. Puede tener uno de tres valores: <br>
+<i>none:</i> El navegador no debe cargar el video hasta que el usuario presiona play. <br>
+<i>auto:</i> El navegador debe descargar el video cuando se carga la página. <br>
+<i>metadata:</i> El navegador debe simplemente recopilar información como el tamaño, el primer fotograma, la lista de pistas y la duración.<br></p>
+</body>
+</html>

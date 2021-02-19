@@ -1,0 +1,74 @@
+<html>
+<head>
+<meta charset="UTF-8">
+<title>How CSS Rules Cascade</title>
+<style type="text/css">
+* {
+    font-family: Arial, Verdana, sans-serif;
+}
+h1 {
+    font-family: "Courier New", Courier, monospace;
+}
+i {
+    color: green;
+}
+i {
+    color: red;
+}
+b {
+    color: pink;
+}
+p b {
+    color: blue !important;
+}
+p b {
+    color: violet;
+}
+p#intro {
+    font-size: 100%;
+}
+p{
+    font-size: 75%;
+}
+</style>
+<style type="text/css">
+    body {
+        font-family: arial;
+       
+    }
+    h1 {
+        color: rgb(255,255,255);
+    }
+    </style>
+    <style type="text/css">
+        body {
+            font-size: 20px;
+            
+            
+        }
+        .volver {
+            color: #eeeeee;
+            text-decoration: none;
+            padding: 20px;
+            background-color: #555555;
+            
+        }
+        .volver:hover {
+            background-color: #eeeeee;
+            color: #373a40;
+        }
+        .po {
+            color: #555555;
+        }
+    </style>
+    <a class="volver" href="../actividad 11/actividades 11.html">VOLVER</a>
+</head>
+
+
+
+<body>
+    <h1 class="po">Potatoes</h1>
+    <p id="intro">Hay <i>muchas</i> vriedades de <b>papas</b>.</p>
+    <p>Por lo general se conocen las papas: pastusas, sabanera y las papas criollas.</p>
+</body>
+</html>

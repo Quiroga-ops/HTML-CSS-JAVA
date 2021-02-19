@@ -1,0 +1,259 @@
+<html>
+<head>
+<title>tarea 7</title>
+</head>
+
+
+<body>
+    <form action="https://google.com/">
+        <fieldset>
+        <legend>Sus datos:</legend><br />
+        <label>Nombre: <br />
+        <input type="text" name="Nombre" /><br />
+        <label>Email: <br />
+        <input type="text" name="Email" /><br />
+        </label>
+        <br />
+    
+        <legend>Su opinion</legend>
+        <p>¿Como se entero de nosotros?</p>
+        <select name="devices">
+        <option value="Google">Google</option>
+        <option value="Yahoo">Yahoo</option>
+        <option value="Facebook">Facebook</option>
+        <option value="Otros">Otros</option><br />
+        </select>
+    
+        <p>¿Volveria a visitarnos?</p>
+        <input type="radio" name="genre" value="Si" checked="checked" />Si
+        <input type="radio" name="genre" value="No" />No
+        <input type="radio" name="genre" value="Quizas" />Quizas
+        <p>Comentarios:</p>
+        <textarea name="comments" cols="20 " rows="4"></textarea><br />
+        <input type="checkbox" name="service" value="x" checked="checked" />Incribirse para actualizaciones por correo electrónico<br />
+        <input type="submit" name="Submit" value="Submit Review" />
+        </form>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <hr>
+        <form action="https://www.google.com/">
+            <p>Por favor, seleccione sus servicios de música favoritos:<br />
+            <input type="checkbox" name="service" value="itunes" checked="checked" /> iTunes
+            <input type="checkbox" name="service" value="deezer" /> Deezer
+            <input type="checkbox" name="service" value="spotify" /> Spotify
+            </p>
+            </form>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <hr>
+        <div style="width: 500px;">
+
+            <h3>Declaración del formulario Form</h3>
+            <p>Los elementos que componen un formulario deben encontrase entre las etiquetas &lt;Form&gt; y &lt;Form&gt;</p>
+            
+            <p>A continuación, se situarán todas las etiquetas que generan los botones, entradas de texto, casillas de verificación, listas, etc.</p>
+            
+            <p>Veamos los atributos de la etiqueta &lt;Form&gt;</p>
+            <br />
+            
+            <p> <b>ACTION</b> Atributo que determina la acción que que debe realizarce al pulsar el botón de ejecución</p>
+            
+            <p><b>METHOD</b> Indica en método de transferecnia de la información introducida en el formulario. Puede emplearse los métodos <b>GET</b> y <b>POST</b></p>
+            
+            <form action="www.google.com">
+                <p>Username:
+                <input type="text" name="username" size="15" maxlength="30" />
+            
+            
+                </p>
+            </form>
+            </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <hr>
+        <form action="https://www.google.com/">
+            <p>¿En qué dispositivo escuchas música?</p>
+            <select name="devices">
+                <option value="ipod"> iPod</option>
+                <option value="radio"> Radio </option>
+                <option value="computer"> Computador</option>
+            </select>
+            </form>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <hr>
+        <form action="https://www.google.com/" method="post">
+            <p>Sube tu canción en formato mp3:</p>
+            <input type="file" name="user-song" /><br />
+            <input type="submit" value="Upload" />
+            </form>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <hr>
+        <div style="width: 500px;">
+
+            <h3>Los formularios</h3>
+            <p>Hasta ahora todos los elementos que hemos visto para la realización de las paginas HTML carecián de intereactividad real con el usuario, ahora, con los formularios vemos como el usuario puede pedir y ofrecer información</p>
+        
+            <p>Por ejemplo podemos diseñar una determinada información</p>
+        
+            <p>Para comprender su funcionamiento imaginemos el típico formulario de papel en l que aparecen casillas de texto, cuadros de selección, etc.</p>
+        
+            <h3>Introducción</h3>
+        
+            <p>Los formularios pueden introducirse en cualquier parte del documento, es decir, en tablas, dentro de un texto preformateado, etc. Evidentemente el formulario puede contener en su interior listas, imagenes, etc.</p>
+        
+            <a href="../index.html">Inicio</a>
+        
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <hr>
+        <form action="https://google.com/">
+            <fieldset>
+            <legend>Datos de contacto</legend>
+            <label>Email:<br />
+            <input type="text" name="email" /></label><br />
+            <label>Telefono movil:<br />
+            <input type="text" name="mobile" /> </label><br />
+            <label>Telefono fijo: <br />
+            <input type="text" name="telephone" /></label>
+            </fieldset>
+            </form>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <hr>
+        <form action="https://google.com/" method="post">
+            <label for="username">Fecha de salida</label>
+            <input type="date" name="depart" />
+            <input type="submit" value="Submit" />
+            </form>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <hr>
+        <fomr action="https://google.com/" method="post">
+            <label for="username">Username:</label>
+            <input type="text" name="username" id="username" required="required" /><br />
+            <label for="password">Password:</label>
+            <input type="password" name="password" id="password" required="required" /></br>
+            <input type="submint" value="Submit" />
+            </fomr></br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <hr>
+        <form action="https://google.com/">
+            <p>Suscribete a nuestra lista de correo electrónico:</p>
+            <input type="text" name="email" />
+            <input type="image" src="../images/subscribe.jpg" width="100" height="20" />
+        </form>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <hr>
+        <form action="https://google.com/">
+            <label>Edad: <input type="text" name="age" /></label>
+            <br />
+            Genero:
+            <input id="female" type="radio" name="gender" value="f">
+            <label for="female">Female</label>
+            <input id="male" type="radio" name="gender" value="m">
+            <label for="male">Male</label>
+            </form>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <hr>
+        <form action="https://www.google.com/">
+            <p>¿Tocas alguno de los siguientes instrumentos?<br />
+                (Puede seleccionar mas de una opción manteniendo presionada la tecla control)</p>
+        
+            <select name="intruments" size="3" multiple="multiple">
+            <option value="guitar" selected="selected"> Guitar</option>
+            <option value="drums"> Drums</option>
+            <option value="keyboard"> Keyboard</option>
+            <option value="bass"> Bass</option>
+            </select>
+            </form>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <hr>
+        <form action="https://www.google.com/">
+            <p>Username:
+            <input type="text" name="username" size="15" maxlength="30" />
+            </p>
+    
+            <p>Password:
+            <input type="password" name="password" size="15" maxlength="30" />
+            </p>
+        </form>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <hr>
+        <form action="https://www.google.com/">
+            <p>Por favor, seleccione su género de musica favorito:
+            <br />
+            <input type="radio" name="genre" value="Rock" checked="checked" /> Rock
+            <input type="radio" name="genre" value="Pop" /> Pop
+            <input type="radio" name="genre" value="jazz" /> Jazz
+            </p>
+            </form>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <hr>
+        <form action="https://google.com/">
+            <p>Suscríbete a nuestra lista de correo electronico:</p>
+            <input type="text" name="email" />
+            <input type="submit" name="subscribe" value="Subscribe" />
+            </form>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <hr>
+        <form action="https://www.google.com/">
+            <p>¿Que te pareció este trabajo? <br />Comentar</p>
+            <textarea name="Comments" Cols="20" rows="4"></textarea>
+        </form>
+</body>
+</html>

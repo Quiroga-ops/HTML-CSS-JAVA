@@ -1,0 +1,114 @@
+<html>
+<head>
+<title>tarea 7</title>
+</head>
+
+
+<body>
+    <audio src="../../audio/test-audio.ogg" controls autoplay>
+        <p>This browser does not support out audio format.</p>
+        </audio>
+        
+        <p>&lt;audio&gt; HTML5 introdujo el elemento &lt;audio&gt; para incluir archivos de audio en sus páginas. Al igual que con el video HTML5, los navegadores esperan diferentes formatos para el audio. El elemento &lt;audio&gt; tiene un número de atributos que le permiten controlar la reproducción de audio: </p>
+        
+        <p><i>src:</i>este atributo especifica la ruta de acceso al archivo de audio.</p>
+        <p><i>controls:</i>este atributo indica si el reproductor debe mostrar los controles.
+        Si no utiliza este atributo, no se mostrarán controles de forma predeterminada.
+        También puede especificar sus propios controles mediante JavaScript.</p>
+        <p><i>autoplay:</i> la presencia de este atributo indica que el audio debe empezar a reproducirse automáticamente. (Se considera una mejor práctica permitir que los visitantes elijan reproducir el audio).</p>
+        <p><i>loop:</i> este atributo espesifica que la pista de audio debe reproducirse de nuevo una vez que haya finalizado</p>
+        <p></p>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <hr>
+        <audio controls autoplay>
+            <source src="../../audio/test-audio.ogg">
+            <source src="../../audio//test-audio.mp3">
+            <p>This browser does not support our audio format</p>
+            </audio>
+            
+            <p><b>src:</b> el elemento &lt;source&gt; utiliza el atributo <i>src</i> para indicar dónde se encuentra el archivo de audio. tipo en el momento de escribir, el atributo de tipo no se usaba habitualmente en el elemento &lt;source&gt; de la misma manera que lo era para elemento &lt;video&gt;.</p>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <hr>
+        <video poster="../../images/puppy.jpg" width="400" height="320" controls="controls">
+            <source src="../../video/puppy.mp4" type='video/mp4;codecs="avc1.42E01E, mp4a.40.2"'
+            <source src="../../video/puppy.webm" type='video/webm;codecs="vp8, vorbis"'>
+            <div id="snow">
+            <p>Yo cannot see this video of a puppy playing in the snow because this browser does not sipport our video formats.</p>
+            </div>
+            </video>
+            <hr/>
+            <iframe width="400" height="320" src="https://www.youtube.com/watch?v=l7TxwBhtTUY&ab_channel=thebootlegboy">
+            </iframe>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <hr>
+        <iframe width="420" height="315" src="https://www.youtube.com/embed/EF81Pb5IWoU">
+        </iframe>
+        <p>Youtube video ID
+        Youtube mostrará un ID (como EF81Pb5IWoU), al guardar (o reproducir) un video.
+        Puede utilizar este ID y hacer referencia a su vídeo en el código HTML.</p>
+        
+        <p><i>Reproducción de un video de Youtube en HTML:</i><br>
+        Para reproducir el vídeo en una página web, haga lo siguiente:
+        
+        <ul>
+            <li>Sube el video a Youtube</li>
+            <li>Anote el ID del video</li>
+            <li>Defina un elemento &lt;iframe&gt; en su página web</li>
+            <li>Deje que el atributo src apunte a la URL del vídeo</li>
+            <li>Utilice los atributos width y height para especificar la dimensión del reproductor</li>
+        </ul>
+        </p>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <hr>
+        <video src="../../video/puppy.mp4/"
+poster="../../images/puppy.jpg"
+width="400" height="300"
+preload
+controls
+loop>
+</video>
+
+<p>Un video de un cachorro jugando en la nieve</p>
+<p>En HTML5 no es necesario proporcionar valores para todos los atributos, como los controles, reproducción automatica y atributos de bucle utilizados con el elemento &lt;video&gt;. Estos atributos son como interruptores de encendido/apagado. Si el atributo está presente, activa esta opción. Si se omite el atributo, la opción está desactivada. Si el navegador no admite el elemento &lt;video&gt; o el formato de vídeo utilizado, se mostrará lo que esté entre la &lt;video&gt; de apertura y las etiquetas de &lt;&#47;video&gt; de cierre.</p>
+
+<p><b>preload:</b> este atributo le indica al navegador qué hacer cuando se carga la página. Puede tener uno de tres valores: <br>
+<i>none:</i> El navegador no debe cargar el video hasta que el usuario presiona play. <br>
+<i>auto:</i> El navegador debe descargar el video cuando se carga la página. <br>
+<i>metadata:</i> El navegador debe simplemente recopilar información como el tamaño, el primer fotograma, la lista de pistas y la duración.<br></p>
+<br>
+<br>
+<br>
+<br>
+<br>
+<hr>
+<video poster="../../images/puppy.jpg" width="400" height="320" preload controls loop>
+    <source src="../../video/puppy.mp4" type='video/mp4;codecs="avc1.42E01E, mp4.40.2"' />
+    <source src="../../video/puppy.webm" type='video/webm;;codecs=vp8, vorbis"' />
+    </video>
+    
+    <p>Un video de un cachorro jugando en la nieve</p>
+    <p>La etiqueta video: Para especificar la ubicación del archivo que se reproducirá, puede usar el elemeto &lt;source&gt; dentro del elementro &lt;video&gt;. (Esto debe reemplazar el atributo src en la etiqueta &lt;video&gt; de apertura) También puede utilizar varios elementos &lt;source&gt; para especificar que el video está disponible em diferentes formatos. (Debido a un error en el iPad, debe proporcionar el vídeo MP4 como el primer formato. De lo contrario, puede que no inicie.)</p>
+    <p><b>src:</b> Este atributo especifica la ruta de acceso al video.</p>
+    <p><b>type:</b>Se debe utilizar este atributo para decirle al navegador qué formato es el vídeo.
+    De lo contrario, descargará parte del video para ver si puede reproducir el archivo (que tomará tiempo y ancho de banda).</p>
+    <p><b>codecs:</b> el códec que usó para codificar el vídeo se suministra dentro del atributo type. Tenga en cuenta el uso de comillas simples, así como comillas dobles en el atributo de tipo, cuando se suministra.</p>
+    
+
+</body>
+</html>
