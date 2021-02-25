@@ -4,43 +4,45 @@
 <title>Ejemplos 1</title>
 <head>
 </html> 
-<style type="text/css">
+<style>
     body {
         background-color:#222831;
         font-size: 20px;
         color: #eeeeee;
     }
     .volver {
-            color: #eeeeee;
+            color: #1687a7;
             text-decoration: none;
             padding: 20px;
-            background-color: #393e46;
+            background-color: #d3e0ea;
             
         }
-        .volver:hover {
-            background-color: #ffd369 ;
-            color: #222831;
-        }
-    .mail {
-        color: #eeeeee;
-    }
-    .boton {
-    background-color: #393e46;
-    color: #eeeeee;
+        .boton {
+    display: inline-block;
+    background-color: #d3e0ea;
+    color: #1687a7;
     text-decoration: none;
     padding: 20px;
     border-radius: 10px;
+    text-shadow: 1px 1px 1px #e8e8e8;
     font-size: 20px;
-    margin-right: 15px;
+    
     text-align: center;
+    /*box-shado 0px hacia abajo 3px hacia la derecha 0px de tamaño*/
+    box-shadow: 0px 2px 0px #222831;
+    border-bottom: 5px solid #e8e8e8;
+    margin: 10px 10px;
+    
 }
-.boton:hover {
-    background-color: #ffd369;
-    color: #222831;
+
+.boton:active {
+    position: relative;
+    top: 3px;
+    border-bottom: none;
+    border-radius: 10px ;
 }
 </style>
-
-<a class="volver" href="../../../index.html">VOLVER</a>
+<a class="volver" href="../../../index.html"><Var>VOLVER</Var></a>
 </head>
 
 
@@ -53,48 +55,23 @@
     <br>
     <br>
     <br>
-    <p>
-    <a class="boton" href="./exercise041.html">4 Estaciones</a>
-    <br>
-    <br>
-    <br>
-    <a class="boton" href="./exercise042.html">Numeros en letras</a>
-    <br>
-    <br>
-    <br>
-    <a class="boton" href="./exercise043.html">Operaciones</a>
-    <br>
-    <br>
-    <br>
-    <a class="boton" href="./exercise044.html">Edad y Estado</a>
-    <br>
-    <br>
-    <br>
-    <a class="boton" href="./exercise045.html">Notas 2</a>
-    <br>
-    <br>
-    <br>
-    <a class="boton" href="./exercise046.html">Dias de la semana</a>
-    <br>
-    <br>
-    <br>
-    <a class="boton" href="./exercise047.html">Calificacion en letras</a>
-    <br>
-    <br>
-    <br>
-    <a class="boton" href="./exercise048.html">Caracter o Numero</a>
-    <br>
-    <br>
-    <br>
-    <a class="boton" href="./exercise049.html">Año y Mes</a>
-    <br>
-    <br>
-    <br>
-    <a class="boton" href="./exercise050.html">Numeros en letras</a>
-    <br>
-    <br>
-    <br>
-    <a class="boton" href="./exercise051.html">Numeros romanos</a>
-
+    <table width="00px" cellpadding="20" cellspacing="10">
+        <tr align="center">
+            <td><a class="boton" href="./exercise041.html">4 Estaciones</a></td>
+            <td><a class="boton" href="./exercise042.html">Numeros en letras</a></td>
+            <td><a class="boton" href="./exercise043.html">Operaciones</a></td>
+            <td><a class="boton" href="./exercise044.html">Edad y Estado</a></td>
+        </tr>
+        <tr align="center">
+            <td><a class="boton" href="./exercise045.html">Notas 2</a></td>
+            <td><a class="boton" href="./exercise046.html">Dias de la semana</a></td>
+            <td><a class="boton" href="./exercise047.html">Calificacion en letras</a></td>
+            <td><a class="boton" href="./exercise048.html">Caracter o Numero</a></td>
+        <tr align="center">
+            <td><a class="boton" href="./exercise049.html">Año y Mes</a></td>
+            <td><a class="boton" href="./exercise050.html">Numeros en letras</a></td>
+            <td><a class="boton" href="./exercise051.html">Numeros romanos</a></td>
+            <td><a class="boton" href="./Nueva carpeta/index.html">Actividad Propuest</a></td>
+    </table>
 </body>
 </html>

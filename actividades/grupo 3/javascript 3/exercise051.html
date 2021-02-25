@@ -3,6 +3,40 @@
     <head>
         <meta charset="utf-8">
         <title>Ejemplo 051</title>
+        <style>
+            .volver {
+                    color: #1687a7;
+                    text-decoration: none;
+                    padding: 20px;
+                    background-color: #d3e0ea;
+                    
+                }
+                .boton {
+            display: inline-block;
+            background-color: #d3e0ea;
+            color: #1687a7;
+            text-decoration: none;
+            padding: 20px;
+            border-radius: 10px;
+            text-shadow: 1px 1px 1px #e8e8e8;
+            font-size: 20px;
+            
+            text-align: center;
+            /*box-shado 0px hacia abajo 3px hacia la derecha 0px de tamaño*/
+            box-shadow: 0px 2px 0px #222831;
+            border-bottom: 5px solid #e8e8e8;
+            margin: 10px 10px;
+            
+        }
+        
+        .boton:active {
+            position: relative;
+            top: 3px;
+            border-bottom: none;
+            border-radius: 10px ;
+        }
+        </style>
+        <a class="volver" href="../javascript 3/grupo3.2.html"><Var>VOLVER</Var></a>
         <script lang="javascript" type="text/javascript">
         var n=prompt("Ingresa un numero menor a 4000: ");
         var r,u,d,c,m;

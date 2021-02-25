@@ -3,37 +3,42 @@
 <title>Boxes</title>
 <head>
 </html> 
-<style type="text/css">
+<style>
     body {
         background-color:#222831;
         font-size: 20px;
         color: #eeeeee;
     }
     .volver {
-            color: #eeeeee;
+            color: #1687a7;
             text-decoration: none;
             padding: 20px;
-            background-color: #393e46;
+            background-color: #d3e0ea;
             
         }
-        .volver:hover {
-            background-color: #ffd369 ;
-            color: #222831;
-        }
-    
-    .boton {
-    background-color: #393e46;
-    color: #eeeeee;
+        .boton {
+    display: inline-block;
+    background-color: #d3e0ea;
+    color: #1687a7;
     text-decoration: none;
     padding: 20px;
     border-radius: 10px;
+    text-shadow: 1px 1px 1px #e8e8e8;
     font-size: 20px;
-    margin-right: 15px;
+    
     text-align: center;
+    /*box-shado 0px hacia abajo 3px hacia la derecha 0px de tamaño*/
+    box-shadow: 0px 2px 0px #222831;
+    border-bottom: 5px solid #e8e8e8;
+    margin: 10px 10px;
+    
 }
-.boton:hover {
-    background-color: #ffd369;
-    color: #222831;
+
+.boton:active {
+    position: relative;
+    top: 3px;
+    border-bottom: none;
+    border-radius: 10px ;
 }
 </style>
 
@@ -50,47 +55,19 @@
     <br>
     <br>
     <br>
-    <a class="boton" href="../actividad 8/tabla 1.html">TABLA 1</a>
-    <br>
-    <br>
-    <br>
-    <a class="boton" href="../actividad 8/tabla 2.html">TABLA 2</a>
-    
-    <br>
-    <br>
-    <br>
-    <a class="boton" href="../actividad 8/tabla 3.html">TABLA 3</a>
-    <br>
-    <br>
-    <br>
-    <a class="boton" href="../actividad 8/tabla 4.html">TABLA 4</a>
-    <br>
-    <br>
-    <br>
-    <a class="boton" href="../actividad 8/tabla 5.html">TABLA 5</a>
-    <br>
-    <br>
-    <br>
-    <a class="boton" href="../actividad 8/tabla 6.html">TABLA 6</a>
-    <br>
-    <br>
-    <br>
-    <a class="boton" href="../actividad 8/tabla de colores.html">TABLA 7</a>
-   
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    <table width="1100px" cellpadding="20" cellspacing="6">
+    <tr align="center">
+        <td><a class="boton" href="../actividad 8/tabla 1.html">TABLA 1</a></td>
+        <td><a class="boton" href="../actividad 8/tabla 2.html">TABLA 2</a></td>
+        <td><a class="boton" href="../actividad 8/tabla 3.html">TABLA 3</a></td>
+        <td><a class="boton" href="../actividad 8/tabla 4.html">TABLA 4</a></td>
+    </tr>
+    <tr align="center">
+        <td><a class="boton" href="../actividad 8/tabla 5.html">TABLA 5</a></td>
+        <td><a class="boton" href="../actividad 8/tabla 6.html">TABLA 6</a></td>
+        <td><a class="boton" href="../actividad 8/tabla de colores.html">TABLA 7</a></td>
+    </tr>
+    </table>
 
 
 

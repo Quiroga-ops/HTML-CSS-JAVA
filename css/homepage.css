@@ -1,15 +1,39 @@
 body {
-    background-color:  #222831;
+    background-color:  #1687a7;
+    font-size: 20px;
+}
+.boton {
+    display: inline-block;
+    background-color: #d3e0ea;
+    color: #1687a7;
+    text-decoration: none;
+    padding: 20px;
+    border-radius: 10px;
+    text-shadow: 1px 1px 1px #e8e8e8;
     font-size: 20px;
     
-  
+    text-align: center;
+    /*box-shado 0px hacia abajo 3px hacia la derecha 0px de tamaño*/
+    box-shadow: 0px 2px 0px #222831;
+    border-bottom: 5px solid #e8e8e8;
+    margin: 10px 10px;
+    
 }
+
+.boton:active {
+    position: relative;
+    top: 3px;
+    border-bottom: none;
+    border-radius: 10px ;
+}
+
+
 .clear {
     clear: both;
 }
 .html_y_css {
     position:relative;
-    color: #eeeeee;
+    color: #f6f5f5;
     top: 14%;
     padding: 15px;
     
@@ -17,14 +41,13 @@ body {
 .CQ{
     text-align: right;
     position top: 0%;
-    
-    color: #ffd369;
+    color: #f6f5f5;
 }
 .guias {
     text-align: left;
     position: ;
-    background-color: #ffd369;
-    color: #;
+    background-color: #276678;
+    color: #f6f5f5;
     border-radius: 5px;
     width: 97%;
     padding: 20px;
@@ -33,44 +56,52 @@ body {
     font-family: Georgia, Times, serif; 
 }
 .html {
-    color: #ffd369;
+    color: #f6f5f5;
     text-decoration: none;
     padding: 10px;
     border-radius: 2px;
     -family: Georgia, Times, serif;
-}
-.html1 {
-    color: #ffd369;
+    text-align: right;
 }
 .texto_1 {
     color: #eeeeee;
+    text-align: right;
     
 }
 .carpetas_html {
-    text-align: left;
+    text-align: right;
+    
 }
 .css {
-    color: #ffd369;
+    color: #f6f5f5;
     text-decoration: none;
     padding: 10px;
     border-radius: 2px;
+    text-align: ;
     
 }
 .java {
-    color: #ffd369;
+    color: #f6f5f5;
     text-decoration: none;
     padding: 10px;
     border-radius: 2px;
+    text-align: right;
     
 }
 .texto_2 {
     color: #eeeeee;
+    text-align: ;
 }
 .texto_3 {
     color: #eeeeee;
+    text-align: right;
+    
+}
+.carpetas_java{
+    text-align: right;
 }
 .carpetas_css {
-    text-align: left;
+    text-align: ;
 
 }
 
@@ -84,40 +115,14 @@ body {
 
 
 
-.boton {
-    display: inline-block;
-    background-color: #ffd369;
-    color: #222831;
-    text-decoration: none;
-    padding: 20px;
-    border-radius: 10px;
-    text-shadow: 1px 1px 1px black;
-    font-size: 20px;
-    
-    text-align: center;
-    /*box-shado 0px hacia abajo 3px hacia la derecha 0px de tamaño*/
-    box-shadow: 0px 3px 0px #ffb369;
-    border-bottom: 5px solid #8000000;
-    margin: 10px 10px;
-    
-}
 
-.boton:active {
-    position: relative;
-    top: 4px;
-    border-bottom: none;
-    box-shadow: inset 2px 2px 2px black, 3px 3px 2px black;
-    border-radius: 10px ;
-    background-color: #ffb369;
-    color: #222831;
-}
-.boton:hover {
+boton:hover {
     
     padding: 20px;
     border-radius: 10px;
-    background-color: #ffd369;
+    background-color: #f57e7e;
+    color: #e8e8e8;
 }
-
 
 
 

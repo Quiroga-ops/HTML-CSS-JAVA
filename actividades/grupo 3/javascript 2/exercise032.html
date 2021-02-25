@@ -3,24 +3,87 @@
     <head>
         <meta charset="utf-8">
         <title>Ejemplo 032</title>
-        <script lang="java" type="text/javascript">
+        <style>
+            .volver {
+                    color: #1687a7;
+                    text-decoration: none;
+                    padding: 20px;
+                    background-color: #d3e0ea;
+                    
+                }
+                .boton {
+            display: inline-block;
+            background-color: #d3e0ea;
+            color: #1687a7;
+            text-decoration: none;
+            padding: 20px;
+            border-radius: 10px;
+            text-shadow: 1px 1px 1px #e8e8e8;
+            font-size: 20px;
+            
+            text-align: center;
+            /*box-shado 0px hacia abajo 3px hacia la derecha 0px de tamaño*/
+            box-shadow: 0px 2px 0px #222831;
+            border-bottom: 5px solid #e8e8e8;
+            margin: 10px 10px;
+            
+        }
+        
+        .boton:active {
+            position: relative;
+            top: 3px;
+            border-bottom: none;
+            border-radius: 10px ;
+        }
+        </style>
+        <a class="volver" href="../javascript 2/grupo3.1.html"><Var>VOLVER</Var></a>
+        <script lang="javascript" type="text/javascript">
         var DESC_G=0.15; DESC_G.toFixed(2);
         var DESC_A=0.2; DESC_A.toFixed(2);
         var REC_G=0.1; REC_G.toFixed(2);
-        var REC_A=0.05; REC_G.toFixed(2);
+        var REC_A=0.05; REC_A.toFixed(2);
         var mc,m=0,tp=0;
-        mc=prompt("Ingrese el monto de compra: ");
+        mc=prompt("Ingrese el Monto de compra: ");
         mc=parseFloat(mc);
         m=parseFloat(m);
         tp=parseFloat(m);
         var tc,fp,r;
         tc=prompt("Tipo de cliente G general o A afiliado: ");
-        fp=prompt("Forma de pago C credito E efectivo ");
+        fp=prompt("Forma de pago C credito E efectivo: ");
         if(tc=='G'||tc=='g'){
             if(fp=='C'||fp=='c'){
-                m=mc
+                m=mc*DESC_G;
+                tp=mc-m;
+                r="DESCUENTO 15%";
+            }else {
+                m=mc*REC_G;
+                tp=mc+m;
+                r="RECARGO 10%";
+            }
+        }else {
+            if(fp=='C'||fp=='c'){
+                m=mc*DESC_A;
+                tp=mc-m;
+                r="DESCUENTO 20%";
+            }else {
+                m=mc*REC_A;
+                tp=mc+m;
+                r="RECARGO 5%";
             }
         }
+        alert(r+ ": " + m +
+        "\nTotal a pagar: " + tp );
         </script>
     </head>
+    <body>
+        <br>
+        <br>
+        <br>
+        <p>Parrafo Ejercicio 032</p>
+        <p>Programa en javascript para ingresar una compra, y dependiendo del monto obtener un decuento
+            <br>
+            Cliente General 15%, recargo 10%,
+            Cliente Afiliado 20%, recargo 5%.
+        </p>
+    </body>
 </html>

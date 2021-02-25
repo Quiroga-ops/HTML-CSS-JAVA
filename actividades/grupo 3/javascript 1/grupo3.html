@@ -4,43 +4,45 @@
 <title>Ejemplos 1</title>
 <head>
 </html> 
-<style type="text/css">
+<style>
     body {
         background-color:#222831;
         font-size: 20px;
         color: #eeeeee;
     }
     .volver {
-            color: #eeeeee;
+            color: #1687a7;
             text-decoration: none;
             padding: 20px;
-            background-color: #393e46;
+            background-color: #d3e0ea;
             
         }
-        .volver:hover {
-            background-color: #ffd369 ;
-            color: #222831;
-        }
-    .mail {
-        color: #eeeeee;
-    }
-    .boton {
-    background-color: #393e46;
-    color: #eeeeee;
+        .boton {
+    display: inline-block;
+    background-color: #d3e0ea;
+    color: #1687a7;
     text-decoration: none;
     padding: 20px;
     border-radius: 10px;
+    text-shadow: 1px 1px 1px #e8e8e8;
     font-size: 20px;
-    margin-right: 15px;
+    
     text-align: center;
+    /*box-shado 0px hacia abajo 3px hacia la derecha 0px de tamaño*/
+    box-shadow: 0px 2px 0px #222831;
+    border-bottom: 5px solid #e8e8e8;
+    margin: 10px 10px;
+    
 }
-.boton:hover {
-    background-color: #ffd369;
-    color: #222831;
+
+.boton:active {
+    position: relative;
+    top: 3px;
+    border-bottom: none;
+    border-radius: 10px ;
 }
 </style>
-
-<a class="volver" href="../../../index.html">VOLVER</a>
+<a class="volver" href="../../../index.html"><Var>VOLVER</Var></a>
 </head>
 
 
@@ -53,66 +55,31 @@
     <br>
     <br>
     <br>
-    <p>
-    <a class="boton" href="./exercise001.html">Hola Mundo</a>
-    <br>
-    <br>
-    <br>
-    <a class="boton" href="./exercise002.html">Esto es javascript</a>
-    <br>
-    <br>
-    <br>
-    <a class="boton" href="./exercise003.html">Primeras Variables</a>
-    <br>
-    <br>
-    <br>
-    <a class="boton" href="./exercise004.html">Formula</a>
-    <br>
-    <br>
-    <br>
-    <a class="boton" href="./exercise005.html">True/False</a>
-    <br>
-    <br>
-    <br>
-    <a class="boton" href="./exercise006.html">Document write</a>
-    <br>
-    <br>
-    <br>
-    <a class="boton" href="./exercise007.html">True/False/Negación</a>
-    <br>
-    <br>
-    <br>
-    <a class="boton" href="./exercise008.html">&&/||</a>
-    <br>
-    <br>
-    <br>
-    <a class="boton" href="./exercise009.html">Operaciones Basicas</a>
-    <br>
-    <br>
-    <br>
-    <a class="boton" href="./exercise010.html">Mayor que/Menor que</a>
-    <br>
-    <br>
-    <br>
-    <a class="boton" href="./exercise011.html">Area y Perimetro</a>
-    <br>
-    <br>
-    <br>
-    <a class="boton" href="./exercise012.html">Area/Permietro del Circulo</a>
-    <br>
-    <br>
-    <br>
-    <a class="boton" href="./exercise013.html">"\n"</a>
-    <br>
-    <br>
-    <br>
-    <a class="boton" href="./exercise014.html">+ - * / </a>
-    <br>
-    <br>
-    <br>
-    <a class="boton" href="./exercise015.html">Potencia</a>
-
-    </p>
+    <table width="00px" cellpadding="20" cellspacing="10">
+        <tr align="center">
+            <td><a class="boton" href="./exercise001.html">Hola Mundo</a>
+            <td><a class="boton" href="./exercise002.html">Esto es javascript</a>
+            <td><a class="boton" href="./exercise003.html">Primeras Variables</a>
+            <td><a class="boton" href="./exercise004.html">Formula</a>
+        </tr>
+        <tr align="center">
+            <td><a class="boton" href="./exercise005.html">True/False</a>
+            <td><a class="boton" href="./exercise006.html">Document write</a>
+            <td><a class="boton" href="./exercise007.html">True/False/Negación</a>
+            <td><a class="boton" href="./exercise008.html">&&/||</a>
+        </tr>
+        <tr align="center">
+            <td><a class="boton" href="./exercise009.html">Operaciones Basicas</a>
+            <td><a class="boton" href="./exercise010.html">Mayor que/Menor que</a>
+            <td><a class="boton" href="./exercise011.html">Area y Perimetro</a>
+            <td><a class="boton" href="./exercise012.html">Area/Permietro del Circulo</a>
+        </tr>
+        <tr align="center">
+            <td><a class="boton" href="./exercise013.html">"\n"</a>
+            <td><a class="boton" href="./exercise014.html">+ - * / </a>
+            <td><a class="boton" href="./exercise015.html">Potencia</a>
+        </tr>
+    </table>
 </body>
 </html>
 
